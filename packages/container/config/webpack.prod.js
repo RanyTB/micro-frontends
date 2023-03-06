@@ -9,6 +9,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js", // contenthash is included for caching issues
+    publicPath: "/container/latest/",
   },
   plugins: [
     new ModuleFederationPlugin({
